@@ -1,1 +1,56 @@
-test
+   // エンコーディング
+    "files.encoding": "utf8bom",
+    // エディタフォント設定
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Consolas",
+    // 空白文字を描画
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": true,
+    // エクスプローラから除外するファイルとフォルダ
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.exe": true,
+        "**/*.o": true,
+        "**/*.obj": true,
+        "**/*.ilk": true,
+        "**/*.pdb": true,
+        "**/*.tlog": true,
+        "**/*.idb": true,
+        "**/*.dll": true,
+        "**/*.vs": true
+    },
+    // 改行コードをLFにする
+    "files.eol": "\n",
+    // Microsoftへの利用状況やエラー等のデータ送信を無効にする
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+    // ターミナルの設定
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING": "1",
+        "MSYSTEM": "MINGW64"
+    },
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.setLocaleVariables": true,
+    "terminal.integrated.shell.windows": "C:\\msys64\\usr\\bin\\bash.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "--login",
+        "-i"
+    ],
+    // gitの設定
+    "git.path": "C:\\msys64\\usr\\bin\\git-wrap.bat",
+    "git.autofetch": true,
+    "workbench.iconTheme": "vscode-icons",
+
+    // pythonの設定
+    "python.pythonPath": "C:\\Users\\simur\\Anaconda3\\python.exe",
+
+    // エディターで CodeLens を表示するかどうかを制御する
+    "editor.codeLens": false
+}
